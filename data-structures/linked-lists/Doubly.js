@@ -40,4 +40,28 @@ class DoubleLinkedList {
     }
 
     // POP IMPLEMENTATION
+    pop() {
+        // Check if the list is empty
+        if (!this.head) return undefined;
+
+        // Store the last node to a variable
+        const node = this.tail;
+
+        // Check if the length of the list is 1
+        if (this.length === 1) {
+            this.head = null;
+            this.tail = null;
+        } else {
+            // Set the connection of the preceding node to null
+            node.prev.next = null;
+
+            // Set tail to the preceding node
+            this.tail = node.prev;
+
+            // Remove the connection of the removed node from the preceding node
+            node.prev = null;
+        }
+        this.length--;
+        return node;
+    }
 }
