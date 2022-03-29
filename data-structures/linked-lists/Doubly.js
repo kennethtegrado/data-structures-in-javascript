@@ -164,6 +164,49 @@ class DoubleLinkedList {
         return true;
     }
 
+    // INSERT IMPLEMENTATION
+    insert(val, index) {
+        // Check if we have valid index
+        if (index < 0 || index > this.length) return false;
+
+        // Check if the list is empty
+        if (!this.head) {
+            // If list is empty then we just push a new node
+            this.push(val);
+        } else if (index === this.length) {
+            // If our index is equal to length then just push it
+            this.push(val);
+        } else if (index === 0) {
+            // Unshift if we want to insert at the front
+            this.unshift(val);
+        } else {
+            // Create a new instance of the node
+            const newNode = new Node(val);
+
+            // Find the previous node before the index
+            const previousNode = this.get(index - 1);
+
+            // Get the nextNode after insertion
+            const nextNode = previousNode.next;
+
+            // Set the next previousNode to newNode
+            previousNode.next = newNode;
+
+            // Set the previous of newNode to previousNode
+            newNode.prev = previousNode;
+
+            // Set the next of our new Node to the nextNode
+            newNode.next = nextNode;
+
+            // Set the previous of nextNode to newNode
+            nextNode.prev = newNode;
+        }
+
+        // Increment
+        this.length++;
+        return true;
+    }
+
     // DISPLAY IMPLEMENTATION
     display() {
         // Use this variable to store our values in an array
