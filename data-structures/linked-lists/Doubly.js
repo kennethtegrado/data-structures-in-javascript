@@ -171,36 +171,64 @@ class DoubleLinkedList {
 
         if (index === this.length) {
             // If our index is equal to length then just push it
-            this.push(val);
+            return !!this.push(val);
         } else if (index === 0) {
             // Unshift if we want to insert at the front
-            this.unshift(val);
-        } else {
-            // Create a new instance of the node
-            const newNode = new Node(val);
-
-            // Find the previous node before the index
-            const previousNode = this.get(index - 1);
-
-            // Get the nextNode after insertion
-            const nextNode = previousNode.next;
-
-            // Set the next previousNode to newNode
-            previousNode.next = newNode;
-
-            // Set the previous of newNode to previousNode
-            newNode.prev = previousNode;
-
-            // Set the next of our new Node to the nextNode
-            newNode.next = nextNode;
-
-            // Set the previous of nextNode to newNode
-            nextNode.prev = newNode;
+            return !!this.unshift(val);
         }
+        // Create a new instance of the node
+        const newNode = new Node(val);
+
+        // Find the previous node before the index
+        const previousNode = this.get(index - 1);
+
+        // Get the nextNode after insertion
+        const nextNode = previousNode.next;
+
+        // Set the next previousNode to newNode
+        previousNode.next = newNode;
+
+        // Set the previous of newNode to previousNode
+        newNode.prev = previousNode;
+
+        // Set the next of our new Node to the nextNode
+        newNode.next = nextNode;
+
+        // Set the previous of nextNode to newNode
+        nextNode.prev = newNode;
 
         // Increment
         this.length++;
         return true;
+    }
+
+    // REMOVE IMPLEMENTATION
+    remove(index) {
+        // Check if we have a valid index
+        if (index < 0 || index >= this.length) return undefined;
+
+        // Check if we are dealing with a first node
+        if (index === 0) return this.shift();
+
+        // Check ifi we are dealing with a last node
+        if (index === this.length - 1) return this.pop();
+
+        // Get the three nodes
+        const node = this.get(index);
+        const nextNode = node.next;
+        const prevNode = node.prev;
+
+        // Establish the connection with our nodes
+        prevNode.next = nextNode;
+        nextNode.prev = prevNode;
+
+        // Remove the connection with null
+        node.next = null;
+        node.prev = null;
+
+        // Decrement
+        this.length--;
+        return node;
     }
 
     // DISPLAY IMPLEMENTATION
