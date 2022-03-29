@@ -150,4 +150,36 @@ class DoubleLinkedList {
         }
         return node;
     }
+
+    // SET IMPLEMENTATION
+    set(val, index) {
+        // Get the node
+        const node = this.get(index);
+
+        // Check if a node exists
+        if (!node) return false;
+
+        // Update the value of the node
+        node.val = val;
+        return true;
+    }
+
+    // DISPLAY IMPLEMENTATION
+    display() {
+        // Use this variable to store our values in an array
+        const data = [];
+
+        // Use this for traversing
+        let node = this.head;
+        for (let i = 0; i < this.length; i++) {
+            // Store the value of current node to our data array
+            data.push(node.val);
+
+            // Update the value of node
+            node = node.next;
+        }
+
+        // Print the data to console
+        console.log(data);
+    }
 }

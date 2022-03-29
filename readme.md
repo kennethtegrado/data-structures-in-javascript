@@ -240,4 +240,4 @@ The idea of a list data structure that consists of nodes is the foundation for o
 
 Compared to the singly linked lists, every node in a doubly linked lists contains two pointers corresponding to the next node and the previous node
 
-It consumes more memory than a single linked lists
+It consumes more memory than a single linked lists. It has the same methods with a double linked list but the implementation are much faster.
