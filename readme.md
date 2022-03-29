@@ -272,3 +272,7 @@ It can implemented using:
 | Pop O(1)   | You remove something from the top of the stack                   |
 | Peek O(1)  | You check the element at the top of the stack                    |
 | Empty O(1) | Returns a boolean to determine whether the stack is empty or not |
+
+# Queues
+
+Abstract Data Structures that follows the **first in and first out** principle
