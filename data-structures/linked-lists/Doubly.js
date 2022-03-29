@@ -118,4 +118,36 @@ class DoubleLinkedList {
         this.length++;
         return this;
     }
+
+    // GET IMPLEMENTATION
+    get(index) {
+        // Check if we have a valid index
+        if (index < 0 || index >= this.length) return null;
+
+        // Get the middle of index of our list
+        const middle = Math.floor((this.length - 1) / 2);
+
+        // Initialize node
+        let node;
+
+        // Check if our index is less than our middle
+        if (index <= middle) {
+            // set our starting node to our head
+            node = this.head;
+
+            // Loop through our nodes until we reach index
+            for (let i = 0; i < index; i++) {
+                node = node.head.next;
+            }
+        } else {
+            // Set our starting node to our tail
+            node = this.tail;
+
+            // Loop through our nodes until we reach length - index
+            for (let i = 0; i < this.length - index; i++) {
+                node = node.prev;
+            }
+        }
+        return node;
+    }
 }
