@@ -35,6 +35,8 @@ class DoubleLinkedList {
             // Set tail to our newly created node
             this.tail = newNode;
         }
+
+        // Increment
         this.length++;
         return this;
     }
@@ -89,5 +91,31 @@ class DoubleLinkedList {
         // Decrement
         this.length--;
         return node;
+    }
+
+    // UNSHIFT IMPLEMENTATION
+    unshift(val) {
+        // Create a new node
+        const newNode = new Node(val);
+
+        // Check if this is the first node
+        if (!this.head) {
+            // Point the tail and head to the newNode
+            this.head = newNode;
+            this.tail = newNode;
+        } else {
+            // Set the connection of the previous node to our newNode
+            this.head.prev = newNode;
+
+            // Set the pointer of newNode to our head node
+            newNode.next = this.head;
+
+            // Update head
+            this.head = newNode;
+        }
+
+        // Increment
+        this.length++;
+        return this;
     }
 }
