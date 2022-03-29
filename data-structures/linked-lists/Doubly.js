@@ -169,11 +169,7 @@ class DoubleLinkedList {
         // Check if we have valid index
         if (index < 0 || index > this.length) return false;
 
-        // Check if the list is empty
-        if (!this.head) {
-            // If list is empty then we just push a new node
-            this.push(val);
-        } else if (index === this.length) {
+        if (index === this.length) {
             // If our index is equal to length then just push it
             this.push(val);
         } else if (index === 0) {
