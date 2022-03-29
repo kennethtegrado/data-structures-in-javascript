@@ -241,3 +241,34 @@ The idea of a list data structure that consists of nodes is the foundation for o
 Compared to the singly linked lists, every node in a doubly linked lists contains two pointers corresponding to the next node and the previous node
 
 It consumes more memory than a single linked lists. It has the same methods with a double linked list but the implementation are much faster.
+
+### Time Complexity
+
+| Operation | Big O |
+| --------- | ----- |
+| Insertion | O(1)  |
+| Removal   | O(1)  |
+| Searching | O(n)  |
+| Access    | O(n)  |
+
+# Stacks
+
+Are abstract data structures that follows the principle of **Last In and First Out**
+
+The last element added to the stack will be the first element removed from the stack
+
+It can implemented using:
+
+-   Arrays
+    -   Disadvantage would be is you need to have a dynamic array to implement a stack
+-   Linked Lists
+    -   Disadvantage would be is that you do not have a random access for things on the stack
+
+## Methods of Stack
+
+| Method | Description                                                      |
+| ------ | ---------------------------------------------------------------- |
+| Push   | You push something at the top of the stack                       |
+| Pop    | You remove something from the top of the stack                   |
+| Peek   | You check the element at the top of the stack                    |
+| Empty  | Returns a boolean to determine whether the stack is empty or not |
