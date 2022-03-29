@@ -61,6 +61,32 @@ class DoubleLinkedList {
             // Remove the connection of the removed node from the preceding node
             node.prev = null;
         }
+
+        // Decrement
+        this.length--;
+        return node;
+    }
+
+    // SHIFT IMPLEMENTATION
+    shift() {
+        // CHECK IF THE LIST IS EMPTY
+        if (!this.head) return undefined;
+
+        const node = this.head;
+        // Check if the node is a first node
+        if (this.length === 1) {
+            this.head = null;
+            this.tail = null;
+        } else {
+            // Set the head to the next node
+            this.head = node.next;
+
+            // Remove the connection
+            this.head.prev = null;
+            node.next = null;
+        }
+
+        // Decrement
         this.length--;
         return node;
     }
