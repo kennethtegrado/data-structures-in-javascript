@@ -276,3 +276,35 @@ It can implemented using:
 # Queues
 
 Abstract Data Structures that follows the **first in and first out** principle
+
+## Methods of Queues
+
+| Method       | Description                              |
+| ------------ | ---------------------------------------- |
+| Enqueue O(1) | Add an item at the end of oue queue      |
+| Dequeue O(1) | Remove an item at the start of the queue |
+
+# Trees
+
+A non-linear abstract data structure.
+
+## Terminologies
+
+-   Root
+    -   The top node in a tree
+-   Child
+    -   A node directly connected to another node when moving away from the root
+-   Parent
+    -   The converse notion of a child
+-   Siblings
+    -   A group of nodes with the same parent
+-   Leaf
+    -   A node with no children
+-   Edge
+    -   The connection between one node and another
+
+## Binary Search Tree
+
+-   Every parent node has at most two children
+-   Every node to the left of a parent node is **always less** than the parent
+-   Every node to the right of a parent node is **always greater** than the parent
