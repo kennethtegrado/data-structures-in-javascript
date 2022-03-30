@@ -308,3 +308,30 @@ A non-linear abstract data structure.
 -   Every parent node has at most two children
 -   Every node to the left of a parent node is **always less** than the parent
 -   Every node to the right of a parent node is **always greater** than the parent
+-   Use a self-balancing search tree to make all operations O(logn)
+
+### Time Complexity
+
+| Method            | Description                                                          |
+| ----------------- | -------------------------------------------------------------------- |
+| Insertion O(logn) | Operation that allows us to insert things on our table               |
+| Search O(logn)    | Operation that returns the node that we are searching for in our BST |
+
+## Tree Traversal
+
+A way where we visit all nodes of the tree
+
+### Breadth-first search
+
+A way of traversing the tree level by level. Utilizes queue
+
+### Depth-first search
+
+A way of traversing the node of the tree where we go down then go back up
+
+-   Inorder
+    -   Arrangement of node is from the lowest to highest
+-   PreOrder
+    -   Arrangement of node is from first visit to last visit
+-   PostOrder
+    -   Arrangement of node is from last visited
