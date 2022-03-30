@@ -327,7 +327,7 @@ A way of traversing the tree level by level. Utilizes queue
 
 ### Depth-first search
 
-A way of traversing the node of the tree where we go down then go back up
+A way of traversing the node of the tree where we go down then go back up. To be able to use the inorder, preorder, and postorder kind of DFS, we need to use recursion
 
 -   Inorder
     -   Arrangement of node is from the lowest to highest
