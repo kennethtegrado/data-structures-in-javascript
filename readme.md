@@ -335,3 +335,20 @@ A way of traversing the node of the tree where we go down then go back up. To be
     -   Arrangement of node is from first visit to last visit
 -   PostOrder
     -   Arrangement of node is from last visited
+
+#### InOrder vs PreOrder vs PostOrder
+
+-   InOrder is good if we want to see a sorted value of our nodes in a tree
+-   PreOrder is a good way to export our tree structure in a way that it can easily be replicated
+
+### Comparisons of the different ways to traverse a tree
+
+-   Breadth-first search is the best if we are dealing with a tree that are narrower (number of children per level is very low) but deeper because its implementation allows lower space complexity
+-   Depth-first search is the best if we are dealing with a tree that is wide (number of children per level is high) but less deep because its implementation allows lower space complexity.
+
+# Heaps
+
+is a **complete binary tree** that satisifes <u>_the heap invariant_</u> where any given node is:
+
+-   Max Binary heap - parent nodes are always larger than child nodes
+-   Min Binary heap - parent nodes are always smaller than child nodes
