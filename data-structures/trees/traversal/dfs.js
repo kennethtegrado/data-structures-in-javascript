@@ -3,6 +3,7 @@ function preOrder(tree) {
 
     // Helper recursive function for traversing our tree
     const traverse = function (node) {
+        if (!node) return;
         // Push our node to the visited nodes
         visited.push(node.value);
 
@@ -20,6 +21,7 @@ function postOrder(tree) {
     const visited = [];
 
     const traverse = function (node) {
+        if (!node) return;
         // Recursive Call
         if (node.left) traverse(node.left);
         if (node.right) traverse(node.right);
@@ -37,6 +39,7 @@ function inOrder(tree) {
     const visited = [];
 
     const traverse = function (node) {
+        if (!node) return;
         // Recursive Call
         if (node.left) traverse(node.left);
 
