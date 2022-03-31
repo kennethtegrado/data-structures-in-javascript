@@ -352,3 +352,7 @@ is a **complete binary tree** that satisifes <u>_the heap invariant_</u> where a
 
 -   Max Binary heap - parent nodes are always larger than child nodes
 -   Min Binary heap - parent nodes are always smaller than child nodes
+
+## Priority Queue
+
+A data structure where each element has a priority. Elements with higher priorities are served before elements with lower priorities
