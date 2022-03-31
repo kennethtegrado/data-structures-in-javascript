@@ -356,3 +356,11 @@ is a **complete binary tree** that satisifes <u>_the heap invariant_</u> where a
 ## Priority Queue
 
 A data structure where each element has a priority. Elements with higher priorities are served before elements with lower priorities
+
+## Time Complexity of Heaps
+
+| Method            | Description                                                                                    |
+| ----------------- | ---------------------------------------------------------------------------------------------- |
+| Insertion O(logn) | We push data from our heap and then we bubble up per priority                                  |
+| Removal O(logn)   | We remove the item with the highest priority and then we get the last node then we bubble down |
+| Search O(logn)    | Finding the element at the heap if it exists in our heap then we return it                     |
