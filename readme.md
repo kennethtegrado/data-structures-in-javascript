@@ -364,3 +364,16 @@ A data structure where each element has a priority. Elements with higher priorit
 | Insertion O(logn) | We push data from our heap and then we bubble up per priority                                  |
 | Removal O(logn)   | We remove the item with the highest priority and then we get the last node then we bubble down |
 | Search O(logn)    | Finding the element at the heap if it exists in our heap then we return it                     |
+
+# Hash tables
+
+# Graphs
+
+A graph data structure consists of a finite (and possibly mutable) set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirected graph or a set of ordered pairs for a directed graph.
+
+## Graph Terminologies
+
+-   **Vertex** - a node
+-   **Edge** - the connection between vertices
+-   **Weighted/Unweighted** - values assigned to distances between vertices
+-   **Directed/Undirected** - directions assigned to distanced between vertices
