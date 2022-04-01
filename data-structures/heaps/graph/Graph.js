@@ -36,4 +36,23 @@ class Graph {
             );
         }
     }
+
+    // REMOVING A VERTEX
+    removeVertex(vertex) {
+        for (const x of this.adjacencyList[vertex]) this.removeEdge(vertex, x);
+
+        delete this.adjacencyList[vertex];
+    }
 }
+
+// SAMPLE RUN
+const graph = new Graph();
+graph.addVertex('Aubrey');
+graph.addVertex('Kenneth');
+graph.addVertex('Guil');
+graph.addVertex('Bella');
+graph.addEdge('Aubrey', 'Kenneth');
+graph.addEdge('Guil', 'Aubrey');
+graph.addEdge('Bella', 'Aubrey');
+graph.addEdge('Guil', 'Bella');
+console.log(graph.adjacencyList);
