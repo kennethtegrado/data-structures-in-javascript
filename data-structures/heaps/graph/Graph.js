@@ -14,5 +14,10 @@ class Graph {
     }
 
     // ADD EDGE IMPLEMENTATION
-    addEdge(vertex) {}
+    addEdge(vertex1, vertex2) {
+        // Building our edge
+        this.adjacencyList[vertex1].push(vertex2);
+
+        this.adjacencyList[vertex2].push(vertex1);
+    }
 }
