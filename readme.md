@@ -32,25 +32,25 @@
     - [Time Complexity](#time-complexity)
   - [Doubly Linked Lists](#doubly-linked-lists)
     - [Time Complexity](#time-complexity-1)
-- [Stacks](#stacks)
-  - [Methods of Stack](#methods-of-stack)
-- [Queues](#queues)
-  - [Methods of Queues](#methods-of-queues)
-- [Trees](#trees)
-  - [Terminologies](#terminologies)
-  - [Binary Search Tree](#binary-search-tree)
-    - [Time Complexity](#time-complexity-2)
-  - [Tree Traversal](#tree-traversal)
-    - [Breadth-first search](#breadth-first-search)
-    - [Depth-first search](#depth-first-search)
-      - [InOrder vs PreOrder vs PostOrder](#inorder-vs-preorder-vs-postorder)
-    - [Comparisons of the different ways to traverse a tree](#comparisons-of-the-different-ways-to-traverse-a-tree)
-- [Heaps](#heaps)
-  - [Priority Queue](#priority-queue)
-  - [Time Complexity of Heaps](#time-complexity-of-heaps)
-- [Hash tables](#hash-tables)
-- [Graphs](#graphs)
-  - [Graph Terminologies](#graph-terminologies)
+  - [Stacks](#stacks)
+    - [Methods of Stack](#methods-of-stack)
+  - [Queues](#queues)
+    - [Methods of Queues](#methods-of-queues)
+  - [Trees](#trees)
+    - [Terminologies](#terminologies)
+    - [Binary Search Tree](#binary-search-tree)
+      - [Time Complexity](#time-complexity-2)
+    - [Tree Traversal](#tree-traversal)
+      - [Breadth-first search](#breadth-first-search)
+      - [Depth-first search](#depth-first-search)
+        - [InOrder vs PreOrder vs PostOrder](#inorder-vs-preorder-vs-postorder)
+      - [Comparisons of the different ways to traverse a tree](#comparisons-of-the-different-ways-to-traverse-a-tree)
+  - [Heaps](#heaps)
+    - [Priority Queue](#priority-queue)
+    - [Time Complexity of Heaps](#time-complexity-of-heaps)
+  - [Hash tables](#hash-tables)
+  - [Graphs](#graphs)
+    - [Graph Terminologies](#graph-terminologies)
 - [Dijkstra's Algorithms](#dijkstras-algorithms)
 
 # Problem Solving Patterns
@@ -306,7 +306,7 @@ It consumes more memory than a single linked lists. It has the same methods with
 | Searching | O(n)  |
 | Access    | O(n)  |
 
-# Stacks
+## Stacks
 
 Are abstract data structures that follows the principle of **Last In and First Out**
 
@@ -319,7 +319,7 @@ It can implemented using:
 -   Linked Lists
     -   Disadvantage would be is that you do not have a random access for things on the stack
 
-## Methods of Stack
+### Methods of Stack
 
 | Method     | Description                                                      |
 | ---------- | ---------------------------------------------------------------- |
@@ -328,22 +328,22 @@ It can implemented using:
 | Peek O(1)  | You check the element at the top of the stack                    |
 | Empty O(1) | Returns a boolean to determine whether the stack is empty or not |
 
-# Queues
+## Queues
 
 Abstract Data Structures that follows the **first in and first out** principle
 
-## Methods of Queues
+### Methods of Queues
 
 | Method       | Description                              |
 | ------------ | ---------------------------------------- |
 | Enqueue O(1) | Add an item at the end of oue queue      |
 | Dequeue O(1) | Remove an item at the start of the queue |
 
-# Trees
+## Trees
 
 A non-linear abstract data structure.
 
-## Terminologies
+### Terminologies
 
 -   Root
     -   The top node in a tree
@@ -358,29 +358,29 @@ A non-linear abstract data structure.
 -   Edge
     -   The connection between one node and another
 
-## Binary Search Tree
+### Binary Search Tree
 
 -   Every parent node has at most two children
 -   Every node to the left of a parent node is **always less** than the parent
 -   Every node to the right of a parent node is **always greater** than the parent
 -   Use a self-balancing search tree to make all operations O(logn)
 
-### Time Complexity
+#### Time Complexity
 
 | Method            | Description                                                          |
 | ----------------- | -------------------------------------------------------------------- |
 | Insertion O(logn) | Operation that allows us to insert things on our table               |
 | Search O(logn)    | Operation that returns the node that we are searching for in our BST |
 
-## Tree Traversal
+### Tree Traversal
 
 A way where we visit all nodes of the tree
 
-### Breadth-first search
+#### Breadth-first search
 
 A way of traversing the tree level by level. Utilizes queue
 
-### Depth-first search
+#### Depth-first search
 
 A way of traversing the node of the tree where we go down then go back up. To be able to use the inorder, preorder, and postorder kind of DFS, we need to use recursion
 
@@ -391,28 +391,28 @@ A way of traversing the node of the tree where we go down then go back up. To be
 -   PostOrder
     -   Arrangement of node is from last visited
 
-#### InOrder vs PreOrder vs PostOrder
+##### InOrder vs PreOrder vs PostOrder
 
 -   InOrder is good if we want to see a sorted value of our nodes in a tree
 -   PreOrder is a good way to export our tree structure in a way that it can easily be replicated
 
-### Comparisons of the different ways to traverse a tree
+#### Comparisons of the different ways to traverse a tree
 
 -   Breadth-first search is the best if we are dealing with a tree that are narrower (number of children per level is very low) but deeper because its implementation allows lower space complexity
 -   Depth-first search is the best if we are dealing with a tree that is wide (number of children per level is high) but less deep because its implementation allows lower space complexity.
 
-# Heaps
+## Heaps
 
 is a **complete binary tree** that satisifes <u>_the heap invariant_</u> where any given node is:
 
 -   Max Binary heap - parent nodes are always larger than child nodes
 -   Min Binary heap - parent nodes are always smaller than child nodes
 
-## Priority Queue
+### Priority Queue
 
 A data structure where each element has a priority. Elements with higher priorities are served before elements with lower priorities
 
-## Time Complexity of Heaps
+### Time Complexity of Heaps
 
 | Method            | Description                                                                                    |
 | ----------------- | ---------------------------------------------------------------------------------------------- |
@@ -420,13 +420,13 @@ A data structure where each element has a priority. Elements with higher priorit
 | Removal O(logn)   | We remove the item with the highest priority and then we get the last node then we bubble down |
 | Search O(logn)    | Finding the element at the heap if it exists in our heap then we return it                     |
 
-# Hash tables
+## Hash tables
 
-# Graphs
+## Graphs
 
 A graph data structure consists of a finite (and possibly mutable) set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirected graph or a set of ordered pairs for a directed graph.
 
-## Graph Terminologies
+### Graph Terminologies
 
 -   **Vertex** - a node
 -   **Edge** - the connection between vertices
