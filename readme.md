@@ -57,6 +57,8 @@
     - [Radix Sort](#radix-sort)
   - [Graph Algorithms](#graph-algorithms)
     - [Dijkstra's Algorithms](#dijkstras-algorithms)
+  - [Divide and Conquer Algorithms](#divide-and-conquer-algorithms)
+    - [Advantages of D&C Algorithm](#advantages-of-dc-algorithm)
 - [Dynamic Programming](#dynamic-programming)
 
 # Problem Solving Patterns
@@ -287,12 +289,13 @@ It can implemented using:
 
 ### Methods of Stack
 
-| Method     | Description                                                      |
-| ---------- | ---------------------------------------------------------------- |
-| Push O(1)  | You push something at the top of the stack                       |
-| Pop O(1)   | You remove something from the top of the stack                   |
-| Peek O(1)  | You check the element at the top of the stack                    |
-| Empty O(1) | Returns a boolean to determine whether the stack is empty or not |
+| Method      | Description                                                      |
+| ----------- | ---------------------------------------------------------------- |
+| Push O(1)   | You push something at the top of the stack                       |
+| Pop O(1)    | You remove something from the top of the stack                   |
+| Peek O(1)   | You check the element at the top of the stack                    |
+| Empty O(1)  | Returns a boolean to determine whether the stack is empty or not |
+| isFull O(1) | Returns a boolean to determine if the stack is ful               |
 
 ## Queues
 
@@ -476,6 +479,20 @@ Builds up the sort by gradually creating a larger left half which is always sort
 ### Dijkstra's Algorithms
 
 An algorithm used for finding the shortest path from a vertex to another vertex on a graph
+
+## Divide and Conquer Algorithms
+
+This is a strategy of solving large problem by breaking the problem into smaller sub-problems, solving the sub-problems, and combining them to get the desired output.
+
+1. **Divide** - divide the given problem into sub-problems using recursion
+2. **Conquer** - solve the smaller sub-problems recursively. If the subproblem is small enough, then solve it directly
+3. **Combine** - combine the solutions of the sub-problems that are part of the recursive process to solve the actual problem
+
+### Advantages of D&C Algorithm
+
+-   The complexity for the multiplication of two matrices using the naive method is O(n3), whereas using the divide and conquer approach (i.e. Strassen's matrix multiplication) is O(n2.8074). This approach also simplifies other problems, such as the Tower of Hanoi.
+-   This approach is suitable for multiprocessing systems.
+-   It makes efficient use of memory caches.
 
 # Dynamic Programming
 
