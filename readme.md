@@ -13,17 +13,6 @@
     - [Finding the maximum sum of a subarray](#finding-the-maximum-sum-of-a-subarray)
   - [Divide and Conquer](#divide-and-conquer)
     - [Binary Search](#binary-search)
-- [Recursion](#recursion)
-- [Searching Algorithms](#searching-algorithms)
-  - [Linear Search](#linear-search)
-  - [Binary Search](#binary-search-1)
-- [Sorting Algorithms](#sorting-algorithms)
-  - [Bubble Sort](#bubble-sort)
-  - [Selection Sort](#selection-sort)
-  - [Insertion Sort](#insertion-sort)
-  - [Merge Sort](#merge-sort)
-  - [Quick Sort](#quick-sort)
-  - [Radix Sort](#radix-sort)
 - [Data Structures](#data-structures)
     - [Classes in JavaScript](#classes-in-javascript)
   - [Linked Lists](#linked-lists)
@@ -51,7 +40,20 @@
   - [Hash tables](#hash-tables)
   - [Graphs](#graphs)
     - [Graph Terminologies](#graph-terminologies)
-- [Dijkstra's Algorithms](#dijkstras-algorithms)
+- [Algorithms](#algorithms)
+  - [Recursion](#recursion)
+  - [Searching Algorithms](#searching-algorithms)
+    - [Linear Search](#linear-search)
+    - [Binary Search](#binary-search-1)
+  - [Sorting Algorithms](#sorting-algorithms)
+    - [Bubble Sort](#bubble-sort)
+    - [Selection Sort](#selection-sort)
+    - [Insertion Sort](#insertion-sort)
+    - [Merge Sort](#merge-sort)
+    - [Quick Sort](#quick-sort)
+    - [Radix Sort](#radix-sort)
+  - [Graph Algorithms](#graph-algorithms)
+    - [Dijkstra's Algorithms](#dijkstras-algorithms)
 
 # Problem Solving Patterns
 
@@ -181,67 +183,6 @@ function search(array, val) {
     return -1;
 }
 ```
-
-# Recursion
-
-A process (a function) that calls itself
-
-Follows the logic of recurrence relation
-
-# Searching Algorithms
-
-## Linear Search
-
-We iterate every element on our array
-
-**Big O**
-`Best Case` is O(1) where we were able to find the element that we are looking for on the spot.
-
-`Worst Case` is O(n) where we need to search the last element in our array
-
-## Binary Search
-
-A much faster form of search (Only works on sorted array)
-
-> Rather than eliminating one element at a time, we eliminate half of the remaining elements at a time
-
-**Big O Notation**
-`Best Case` is O(1) where we were able to find the element that we are looking for on the spot;
-
-`Worst Case` is O(logn) where we weren't able to immediately find the element we are looking for
-
-# Sorting Algorithms
-
-Sorting is the process of rearranging the items in a collection so that the are items are in some kind of order.
-
-Examples:
-
--   Sorting numbers form smallest to largest
--   Sorting names alphabetically
--   Sorting movies based on release year
--   Sorting movies based on revenue
-
-## Bubble Sort
-
-A sorting algorithm where the largest values bubble up to the top
-
-> O(n^2)
-
-## Selection Sort
-
-The opposite of bubble sort, it places small values into sorted position
-
-> O(n^2)
-
-## Insertion Sort
-
-Builds up the sort by gradually creating a larger left half which is always sorted
-
-## Merge Sort
-
-## Quick Sort
-
-## Radix Sort
 
 # Data Structures
 
@@ -433,6 +374,71 @@ A graph data structure consists of a finite (and possibly mutable) set of vertic
 -   **Weighted/Unweighted** - values assigned to distances between vertices
 -   **Directed/Undirected** - directions assigned to distanced between vertices
 
-# Dijkstra's Algorithms
+# Algorithms
+
+## Recursion
+
+A process (a function) that calls itself
+
+Follows the logic of recurrence relation
+
+## Searching Algorithms
+
+### Linear Search
+
+We iterate every element on our array
+
+**Big O**
+`Best Case` is O(1) where we were able to find the element that we are looking for on the spot.
+
+`Worst Case` is O(n) where we need to search the last element in our array
+
+### Binary Search
+
+A much faster form of search (Only works on sorted array)
+
+> Rather than eliminating one element at a time, we eliminate half of the remaining elements at a time
+
+**Big O Notation**
+`Best Case` is O(1) where we were able to find the element that we are looking for on the spot;
+
+`Worst Case` is O(logn) where we weren't able to immediately find the element we are looking for
+
+## Sorting Algorithms
+
+Sorting is the process of rearranging the items in a collection so that the are items are in some kind of order.
+
+Examples:
+
+-   Sorting numbers form smallest to largest
+-   Sorting names alphabetically
+-   Sorting movies based on release year
+-   Sorting movies based on revenue
+
+### Bubble Sort
+
+A sorting algorithm where the largest values bubble up to the top
+
+> O(n^2)
+
+### Selection Sort
+
+The opposite of bubble sort, it places small values into sorted position
+
+> O(n^2)
+
+### Insertion Sort
+
+Builds up the sort by gradually creating a larger left half which is always sorted
+
+### Merge Sort
+
+### Quick Sort
+
+### Radix Sort
+
+## Graph Algorithms
+
+### Dijkstra's Algorithms
 
 An algorithm used for finding the shortest path from a vertex to another vertex on a graph
