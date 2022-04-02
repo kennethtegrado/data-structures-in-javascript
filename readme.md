@@ -16,6 +16,7 @@
 - [Data Structures](#data-structures)
   - [Types of Data Structure](#types-of-data-structure)
     - [Classes in JavaScript](#classes-in-javascript)
+  - [Arrays](#arrays)
   - [Linked Lists](#linked-lists)
   - [Singly Linked Lists](#singly-linked-lists)
     - [Methods](#methods)
@@ -196,15 +197,29 @@ Data structure is a **storage** that is used to store and organize data. It is a
 ## Types of Data Structure
 
 -   Linear
+    -   Are data structures where the elements are arranged in sequence one after the other. Linear data structures are not the best choice if we want to focus on operational complexities
+    -   Examples:
+        -   Array
+        -   Stack
+        -   Queue
+        -   Linked List
 -   Non-linear
+    -   Are data-structures that do not follow any sequence. These structures are arranged in a hierarchical manner
+    -   Examples:
+        -   Graph
+        -   Trees
 
 ### Classes in JavaScript
 
 -   A blueprint for creating objects with pre-defined properties and methods
 
+## Arrays
+
+Elements in memory are arranged in continuous memory. All the elements of an array are of the same type (In javascript, we can store any type). JavaScript has a native implementation of an array so there is no need for implementation
+
 ## Linked Lists
 
-A data structure that contains a head, tail, and length property. It consists of nodes, and each node has a value and a pointer to another node or null
+A data structure that contains a head, tail, and length property. It consists of nodes, and each node has a value and a pointer to another node or null. In linked list data structure, data elements are connected through a series of nodes. And, each node contains the data items and address to the next node
 
 ## Singly Linked Lists
 
