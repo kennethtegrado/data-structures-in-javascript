@@ -25,6 +25,8 @@
     - [Time Complexity](#time-complexity-1)
   - [Stacks](#stacks)
     - [Methods of Stack](#methods-of-stack)
+    - [How stack works](#how-stack-works)
+    - [Applications of Stack](#applications-of-stack)
   - [Queues](#queues)
     - [Methods of Queues](#methods-of-queues)
   - [Trees](#trees)
@@ -297,16 +299,33 @@ It can implemented using:
 | Empty O(1) | Returns a boolean to determine whether the stack is empty or not |
 | Full O(1)  | Returns a boolean to determine if the stack is ful               |
 
+### How stack works
+
+1. A pointer called `TOP` is used to keep track of the top element in the stack.
+2. When initializing the stack, we set its value to -1 so that we can check if the stack is empty by comparing `TOP == -1`.
+3. On pushing an element, we increase the value of TOP and place the new element in the position pointed to by TOP.
+4. On popping an element, we return the element pointed to by TOP and reduce its value.
+5. Before pushing, we check if the stack is already full
+6. Before popping, we check if the stack is already empty
+
+### Applications of Stack
+
+-   Reversing a word
+-   Saving history in browsers history so users can go back and forward
+
 ## Queues
 
 Abstract Data Structures that follows the **first in and first out** principle
 
 ### Methods of Queues
 
-| Method       | Description                              |
-| ------------ | ---------------------------------------- |
-| Enqueue O(1) | Add an item at the end of oue queue      |
-| Dequeue O(1) | Remove an item at the start of the queue |
+| Method       | Description                               |
+| ------------ | ----------------------------------------- |
+| Enqueue O(1) | Add an item at the end of oue queue       |
+| Dequeue O(1) | Remove an item at the start of the queue  |
+| Empty O(1)   | Check if the queue is empty               |
+| Full O(1)    | Check if the queue is full                |
+| Peek O(1)    | Check the value of the front of the queue |
 
 ## Trees
 
