@@ -14,6 +14,7 @@
   - [Divide and Conquer](#divide-and-conquer)
     - [Binary Search](#binary-search)
 - [Data Structures](#data-structures)
+  - [Types of Data Structure](#types-of-data-structure)
     - [Classes in JavaScript](#classes-in-javascript)
   - [Linked Lists](#linked-lists)
   - [Singly Linked Lists](#singly-linked-lists)
@@ -41,6 +42,7 @@
   - [Graphs](#graphs)
     - [Graph Terminologies](#graph-terminologies)
 - [Algorithms](#algorithms)
+  - [Qualities of Good Algorithms](#qualities-of-good-algorithms)
   - [Recursion](#recursion)
   - [Searching Algorithms](#searching-algorithms)
     - [Linear Search](#linear-search)
@@ -54,6 +56,7 @@
     - [Radix Sort](#radix-sort)
   - [Graph Algorithms](#graph-algorithms)
     - [Dijkstra's Algorithms](#dijkstras-algorithms)
+- [Dynamic Programming](#dynamic-programming)
 
 # Problem Solving Patterns
 
@@ -187,6 +190,13 @@ function search(array, val) {
 # Data Structures
 
 Data structures are collections of values, the relationships among them, and the functions or operations that can be applied to the data
+
+Data structure is a **storage** that is used to store and organize data. It is a way of arranging data on a computer so that it can be _<u>accessed and updated efficiently</u>_.
+
+## Types of Data Structure
+
+-   Linear
+-   Non-linear
 
 ### Classes in JavaScript
 
@@ -376,6 +386,15 @@ A graph data structure consists of a finite (and possibly mutable) set of vertic
 
 # Algorithms
 
+An algorithm is a set of well-defined instructions to solve a particular problem. It takes a set of input and produces a desired output.
+
+## Qualities of Good Algorithms
+
+-   Input and output should be defined precisely
+-   Each step in the algorithm should be clear and unambiguous
+-   Algorithms should be most effect among many different ways to solve a problem
+-   An algorithm shouldn't include computer code. Instead, the algorithm should be written in such a way that it can be used in different programming languages
+
 ## Recursion
 
 A process (a function) that calls itself
@@ -442,3 +461,18 @@ Builds up the sort by gradually creating a larger left half which is always sort
 ### Dijkstra's Algorithms
 
 An algorithm used for finding the shortest path from a vertex to another vertex on a graph
+
+# Dynamic Programming
+
+A method for solving a complex problem by breaking it down into a collection of simpler subproblems, solving each of those subproblems just once, and storing their solutions
+
+It only works when we are dealing with **Overlapping Subproblems** and **Optimal Substructure**
+
+Overlapping Subproblems are problems that can be broken down into subproblems which are reused several times. Examples:
+
+-   Fibonacci Sequence
+    -   Every number after the first two is the sum of the two preceding ones
+-   Merge Sort
+    -   We divide all arrays until we only have one left and then we sort it
+
+A problem is said to have optimal substructure if an optimal solution can be constructed from optimal solutions of its subproblems
