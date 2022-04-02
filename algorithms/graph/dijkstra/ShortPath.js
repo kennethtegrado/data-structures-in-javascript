@@ -239,6 +239,7 @@ class WeightedGraph {
     }
 }
 
+// Sample Implementation
 const graph = new WeightedGraph();
 
 graph.addVertex('A');
