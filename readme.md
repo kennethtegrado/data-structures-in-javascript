@@ -29,6 +29,7 @@
     - [Applications of Stack](#applications-of-stack)
   - [Queues](#queues)
     - [Methods of Queues](#methods-of-queues)
+    - [Applications of Queue](#applications-of-queue)
   - [Trees](#trees)
     - [Terminologies](#terminologies)
     - [Binary Search Tree](#binary-search-tree)
@@ -326,6 +327,13 @@ Abstract Data Structures that follows the **first in and first out** principle
 | Empty O(1)   | Check if the queue is empty               |
 | Full O(1)    | Check if the queue is full                |
 | Peek O(1)    | Check the value of the front of the queue |
+
+### Applications of Queue
+
+-   CPU Scheduling
+-   Transferring data between processes
+-   Handling of interrupts in real-time systems
+-   Call center phone systems
 
 ## Trees
 
