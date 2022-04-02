@@ -377,3 +377,7 @@ A graph data structure consists of a finite (and possibly mutable) set of vertic
 -   **Edge** - the connection between vertices
 -   **Weighted/Unweighted** - values assigned to distances between vertices
 -   **Directed/Undirected** - directions assigned to distanced between vertices
+
+# Dijkstra's Algorithms
+
+An algorithm used for finding the shortest path from a vertex to another vertex on a graph
